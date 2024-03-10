@@ -48,12 +48,6 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
-tasks.jar {
-    manifest {
-        attributes["Main-Class"] = "Main"
-    }
-}
-
 tasks.getByName("build")
     .finalizedBy("shadowJar")
 
